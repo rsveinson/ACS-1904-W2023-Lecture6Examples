@@ -17,7 +17,9 @@ public class Person implements Comparable<Person> {
     // concrete implementation of the comparTo() method
     public int compareTo (Person p) {
         // compare the name of this object  
-        // to the name of object p
+        // to the name of object p, name is a String
+        // so we are taking advantage of the Sring implementation
+        // of compareTo()
         return name.compareTo(p.name);
     }
     
